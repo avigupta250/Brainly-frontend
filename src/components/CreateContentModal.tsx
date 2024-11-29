@@ -99,7 +99,7 @@ export function CreateContentModal({ open, onClose }: ModalProps) {
                 />
                 <input
                   type="text"
-                  placeholder="Type"
+                  placeholder="youtube or twitter"
                   value={type}
                   onChange={(e) => setType(e.target.value)}
                   className="mb-2 p-2 border rounded"

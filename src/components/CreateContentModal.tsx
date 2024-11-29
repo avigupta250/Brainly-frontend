@@ -26,7 +26,7 @@ export function CreateContentModal({ open, onClose }: ModalProps) {
     async function submitHandler(){
         
             try{
-                console.log("hjfjg")
+                // console.log("hjfjg")
                 const response=await apiConnector({
                     method:"post",
                     url:endPoints.CONTENT,

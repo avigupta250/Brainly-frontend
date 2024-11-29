@@ -57,7 +57,7 @@ function DashBoard() {
       console.log(response.data.hash)
       const hash = response?.data?.hash;
       if (hash) {
-        const baseUrl = "http://localhost:5173/share";
+        const baseUrl = "https://brainly-8i89.onrender.com/share";
         setShareUrl(`${baseUrl}/${hash}`);
         console.log("Updated Share URL:", `${baseUrl}/${hash}`);
         toast.success("Brain Published", {

@@ -57,7 +57,7 @@ function DashBoard() {
       console.log(response.data.hash)
       const hash = response?.data?.hash;
       if (hash) {
-        const baseUrl = "https://brainly-8i89.onrender.com/share";
+        const baseUrl = "https://brainly-frontend-sigma.vercel.app/share";
         setShareUrl(`${baseUrl}/${hash}`);
         console.log("Updated Share URL:", `${baseUrl}/${hash}`);
         toast.success("Brain Published", {

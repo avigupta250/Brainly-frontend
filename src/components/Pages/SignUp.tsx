@@ -77,7 +77,7 @@ const Signup = () => {
                     {/* Username Field */}
                     <div>
                         <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-600">
-                            Username
+                            Email
                         </label>
                         <input
                             type="email"

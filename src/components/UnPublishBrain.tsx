@@ -20,21 +20,21 @@ export default function UnPublishBrain({shareUrl}:any) {
           },
         });
 
-        console.log("response from uNpublish", response.data.link);
-        console.log("response from uNpublish", response.data.link[0].live);
+        // console.log("response from uNpublish", response.data.link);
+        // console.log("response from uNpublish", response.data.link[0].live);
 
         if (response.data.link[0].live === "true") {
           setStatus("true");
         }
       } catch (err) {
-        console.error(err);
+        // console.error(err);
       }
     }
 
     checkStatus();
   }, [shareUrl]);
 
-  // Handle the toggle switch change (Publish / Unpublish)
+  
   const handleToggle = async() => {
     try{
         await apiConnector({

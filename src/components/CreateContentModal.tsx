@@ -51,10 +51,10 @@ export function CreateContentModal({ open, onClose }: ModalProps) {
                 onClose()
 
                 
-                 console.log("conetnt creation ",response.data.userContent)
+                //  console.log("conetnt creation ",response.data.userContent)
                  return <Navigate to="/dashboard"></Navigate>
             }catch(err){
-                   console.log("error from content creation ",err)
+                  //  console.log("error from content creation ",err)
             }
     }
   return (

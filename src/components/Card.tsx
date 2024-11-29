@@ -1,5 +1,7 @@
 
-import { ShareIcon } from "./Icons/ShareIcon";
+// import { ShareIcon } from "./Icons/ShareIcon";
+
+// import { FaShare } from "react-icons/fa";
 
 
 
@@ -16,11 +18,12 @@ export function Card(props: CardProps) {
      
         <div className="flex justify-between ">
             <div className="flex gap-2 text-md text-gray-500 items-center">
-                <ShareIcon size="md"></ShareIcon>
+            <div className="h-2 w-2 rounded-full bg-black"></div>
                 <p className="text-black font-bold">{props.title}</p>
             </div>
             <div className="flex gap-2 text-gray-500 items-center">
-                <ShareIcon size="md"></ShareIcon>
+                
+                {/* <h1><FaShare/></h1> */}
                 <h1>Delete</h1>
             </div>
 
@@ -32,9 +35,9 @@ export function Card(props: CardProps) {
 
                 </div> : 
                 <div className="h-[200px] overflow-y-scroll">
-                    {/* <blockquote className="twitter-tweet">
+                    <blockquote className="twitter-tweet">
                         <a href={props.link}></a>
-                    </blockquote> */}
+                    </blockquote>
                 </div>
             }
 

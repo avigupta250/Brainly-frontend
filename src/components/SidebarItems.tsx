@@ -14,7 +14,7 @@ export function SidebarItems({ text, icon, activeFilter, setActiveFilter }: Side
   const allContent = useRecoilValue(allContentAtom);
 
   function filterHandler() {
-    // Filter content and update state
+   
     if(text!=="My Brain")
    { const typeItem = allContent.filter((c) => c.type === text.toLowerCase());
     setContent(typeItem);
@@ -25,7 +25,7 @@ export function SidebarItems({ text, icon, activeFilter, setActiveFilter }: Side
   }
   }
 
-  // Determine if this item is the active filter
+  
   const isActive = activeFilter === text;
 
   return (

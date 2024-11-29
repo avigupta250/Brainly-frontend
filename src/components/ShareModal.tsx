@@ -12,7 +12,7 @@ type ShareModalProps = {
 };
 
 export default function ShareModal({ shareModalOpen, setShareModalOpen,shareUrl}: ShareModalProps) {
-  if (!shareModalOpen) return null; // Only render the modal if it's open
+  if (!shareModalOpen) return null; 
    
 
   

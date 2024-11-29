@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { FaShare } from "react-icons/fa";
+
 
 interface ButtonProps{
     variant :"primary" |"secondary";

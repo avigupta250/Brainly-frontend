@@ -33,7 +33,7 @@ export function CreateContentModal({ open, onClose }: ModalProps) {
                     bodyData:{
                         title,
                         link,
-                        type
+                        type:type.toLowerCase()
                     },
                     headers:{
                         token:localStorage.getItem("token")
